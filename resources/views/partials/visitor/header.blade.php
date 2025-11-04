@@ -41,6 +41,20 @@
                             </li>
                         </ul> --}}
                     </li>
+                    <li class="dropdown">
+                        <a class="nav-link {{ request()->routeIs('visitor.services.*') ? 'active' : '' }}"
+                            href="{{ route('visitor.services.index') }}"><span>Layanan</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            @foreach ($allServices as $service)
+                                <li>
+                                    <a href="{{ route('visitor.services.show', $service->slug) }}">
+                                        {{ $service->name }}
+                                    </a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </li>
                     <li>
                         <a href="https://blog.geosantara.com/" class="nav-link">Berita</a>
                     </li>
@@ -63,20 +77,7 @@
                             CSR
                         </a>
                     </li>
-                    <li class="dropdown">
-                        <a class="nav-link {{ request()->routeIs('visitor.services.*') ? 'active' : '' }}"
-                            href="{{ route('visitor.services.index') }}"><span>Layanan</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            @foreach ($allServices as $service)
-                                <li>
-                                    <a href="{{ route('visitor.services.show', $service->slug) }}">
-                                        {{ $service->name }}
-                                    </a>
-                                </li>
-                            @endforeach
-                        </ul>
-                    </li>
+
 
                     {{-- <li class="dropdown"><a href="#"><span>Layanan</span> <i
                                 class="bi bi-chevron-down toggle-dropdown"></i></a>
