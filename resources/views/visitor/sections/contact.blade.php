@@ -13,7 +13,7 @@
                         <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                             <i class="bi bi-geo-alt flex-shrink-0"></i>
                             <div>
-                                <h4>PT GEO SANTARA INDONESIA</h4>
+                                <h4>PT GEO SANTARA INDO</h4>
                                 <p>Head Office Lantai 3, R. 309 310 Jl. Magelang No. 188, Karangwaru, Kec. Tegalrejo,
                                     Kota
                                     Yogyakarta, 55242</p>

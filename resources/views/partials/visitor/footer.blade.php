@@ -8,7 +8,7 @@
                     <div class="contact-item">
                         <i class="bi bi-building"></i>
                         <div>
-                            <strong>PT Geo Santara Indonesia</strong>
+                            <strong>PT Geo Santara Indo</strong>
                             <span>Perusahaan Geosantara</span>
                         </div>
                     </div>
