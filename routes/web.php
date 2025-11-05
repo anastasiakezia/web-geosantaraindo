@@ -11,6 +11,7 @@ use App\Http\Controllers\Visitor\VisitorHomeController;
 use App\Http\Controllers\Visitor\VisitorArticleController;
 use App\Http\Controllers\Visitor\VisitorGalleryController;
 use App\Http\Controllers\Visitor\VisitorServiceController;
+use Spatie\Sitemap\SitemapGenerator;
 
 /*
 |--------------------------------------------------------------------------
@@ -86,6 +87,18 @@ Route::prefix('galleries')->name('visitor.galleries.')->group(function () {
 // Contact
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 
+/*
+|--------------------------------------------------------------------------
+| Sitemap (Indexing) Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::get('/generate-sitemap', function () {
+    SitemapGenerator::create(config('app.url'))
+        ->writeToFile(public_path('sitemap.xml'));
+
+    return "✅ Sitemap berhasil dibuat di /public/sitemap.xml";
+});
 
 /*
 |--------------------------------------------------------------------------
