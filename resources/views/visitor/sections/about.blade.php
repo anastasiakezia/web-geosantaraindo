@@ -72,15 +72,16 @@
     <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="certification-container">
             <div class="certification-item">
-                <img src="{{ asset('visitor/assets/img/home/verifikasi-1.png') }}" alt="Sertifikasi NSQ">
+                <img src="{{ asset('visitor/assets/img/home/verifikasi-1.png') }}" alt="Sertifikasi NSQ" loading="lazy">
             </div>
             <div class="certification-divider"></div>
             <div class="certification-item">
-                <img src="{{ asset('visitor/assets/img/home/verifikasi-2.png') }}" alt="Sertifikasi ISO">
+                <img src="{{ asset('visitor/assets/img/home/verifikasi-2.png') }}" alt="Sertifikasi ISO" loading="lazy">
             </div>
             <div class="certification-divider"></div>
             <div class="certification-item">
-                <img src="{{ asset('visitor/assets/img/home/verifikasi-3.png') }}" alt="Sertifikasi ASIB">
+                <img src="{{ asset('visitor/assets/img/home/verifikasi-3.png') }}" alt="Sertifikasi ASIB"
+                    loading="lazy">
             </div>
         </div>
     </div>

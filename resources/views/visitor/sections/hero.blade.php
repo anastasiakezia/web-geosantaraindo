@@ -16,7 +16,8 @@
 
 <section id="hero" class="hero section">
 
-    <img src="{{ asset('visitor/assets/img/home/banner-website-1.jpg') }}" alt="Banner Geo Santara" class="hero-bg">
+    <img src="{{ asset('visitor/assets/img/home/banner-website-1.jpg') }}" alt="Banner Geo Santara" class="hero-bg"
+        loading="eager" fetchpriority="high">
 
     <div class="container">
         <div class="row align-items-center">
@@ -40,7 +41,7 @@
 
             <div class="col-lg-6 hero-people-wrapper" data-aos="zoom-in">
                 <img src="{{ asset('visitor/assets/img/home/foto_pak_agung.png') }}" class="img-fluid"
-                    alt="Geo Santara Team">
+                    alt="Geo Santara Team" loading="lazy">
             </div>
 
         </div>

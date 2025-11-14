@@ -75,7 +75,7 @@
                                 transition:all .25s ease-in-out;">
                                 <div style="width:100%; height:230px; overflow:hidden; border-radius:16px 16px 0 0;">
                                     <img src="{{ asset('storage/' . $service->thumbnail) }}" alt="{{ $service->name }}"
-                                        style="width:100%; height:100%; object-fit:cover;">
+                                        style="width:100%; height:100%; object-fit:cover;"loading="lazy">
                                 </div>
                                 <div class="p-3">
                                     <h3 style="font-size:1rem; font-weight:600; line-height:1.3;">{{ $service->name }}</h3>

@@ -33,7 +33,7 @@
                         <a href="{{ asset('visitor/assets/img/gallery/gallery-' . $i . '.jpg') }}" class="glightbox"
                             data-gallery="images-gallery">
                             <img src="{{ asset('visitor/assets/img/gallery/gallery-' . $i . '.jpg') }}" alt=""
-                                class="img-fluid">
+                                class="img-fluid" loading="lazy">
                         </a>
                     </div>
                 </div>

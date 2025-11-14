@@ -11,7 +11,8 @@ use App\Http\Controllers\Visitor\VisitorHomeController;
 use App\Http\Controllers\Visitor\VisitorArticleController;
 use App\Http\Controllers\Visitor\VisitorGalleryController;
 use App\Http\Controllers\Visitor\VisitorServiceController;
-use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\Tags\Url;
 
 /*
 |--------------------------------------------------------------------------
@@ -94,12 +95,19 @@ Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.
 */
 
 Route::get('/generate-sitemap', function () {
-    SitemapGenerator::create(config('app.url'))
-        ->writeToFile(public_path('sitemap.xml'));
 
-    return "✅ Sitemap berhasil dibuat di /public/sitemap.xml";
+    $sitemap = Sitemap::create()
+        ->add(Url::create('/'))
+        ->add(Url::create('/about/profile'))
+        ->add(Url::create('/services'))
+        ->add(Url::create('/articles?from=articles'))
+        ->add(Url::create('/galleries'))
+        ->add(Url::create('/articles/csr?from=csr'));
+
+    $sitemap->writeToFile(public_path('sitemap.xml'));
+
+    return "✅ Sitemap berhasil dibuat!";
 });
-
 /*
 |--------------------------------------------------------------------------
 | Auth Routes

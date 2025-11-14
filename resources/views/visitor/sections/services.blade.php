@@ -19,7 +19,8 @@
                                 <!-- Thumbnail Full Rounded -->
                                 <div style="width:100%; height:330px; overflow:hidden; border-radius:5px;">
                                     <img src="{{ asset('storage/' . $service->thumbnail) }}" alt="{{ $service->name }}"
-                                        style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+                                        style="width:100%; height:100%; object-fit:cover; border-radius:10px;"
+                                        loading="lazy">
                                 </div>
 
                                 <!-- Judul -->

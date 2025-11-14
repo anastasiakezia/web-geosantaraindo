@@ -1,6 +1,9 @@
 @extends('layouts.visitor')
 
 @section('title', 'Tentang Kami')
+@section('meta_description',
+    'PT Geo Santara Indonesia adalah perusahaan pengeboran geologi, survey geoteknik, dan
+    analisis bawah permukaan berbasis profesionalisme dan teknologi modern.')
 
 @section('content')
     <main class="container-fluid px-0">
