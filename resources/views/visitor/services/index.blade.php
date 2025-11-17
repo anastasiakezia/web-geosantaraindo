@@ -4,7 +4,7 @@
 
 @section('content')
     <section id="services" class="services section py-5">
-        <div class="container">
+        <div class="container px-4 px-md-3">
             <div class="section-title text-center mb-5" data-aos="fade-up">
                 <h2>Layanan Kami</h2>
                 <p>Temukan layanan terbaik kami sesuai kebutuhan Anda.</p>

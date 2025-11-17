@@ -1,5 +1,7 @@
 @extends('layouts.visitor')
 
+{!! \App\Helpers\SeoHelper::meta($article) !!}
+
 @php
     $from = $from ?? (isset($isCsr) && $isCsr ? 'csr' : 'articles');
 @endphp

@@ -39,7 +39,7 @@
         @if (trim($__env->yieldContent('title')))
             - PT Geo Santara Indo
         @else
-            PT Geo Santara Indo
+            PT Geo Santara Indo | Layanan Bor Tanah Profesional dan Berpengalaman
         @endif
     </title>
 

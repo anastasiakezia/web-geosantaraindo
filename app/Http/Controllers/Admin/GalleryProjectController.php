@@ -74,7 +74,7 @@ class GalleryProjectController extends Controller
             'project_name' => 'required|string|max:255',
             'service_id' => 'required|exists:services,id',
             'city_id' => 'required|exists:cities,id',
-            'image_path.*' => 'required|image|mimes:jpg,jpeg,png|max:2048',
+            'image_path.*' => 'required|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
         $slugBase = Str::slug($request->project_name);
@@ -123,7 +123,7 @@ class GalleryProjectController extends Controller
             'project_name' => 'required|string|max:255',
             'service_id' => 'required|exists:services,id',
             'city_id' => 'required|exists:cities,id',
-            'image_path.*' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+            'image_path.*' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
         if ($galleryProject->project_name !== $request->project_name) {

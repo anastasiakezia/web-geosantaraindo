@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Console\\Commands\\PublishScheduledArticles' => $baseDir . '/app/Console/Commands/PublishScheduledArticles.php',
+    'App\\Helpers\\SeoHelper' => $baseDir . '/app/Helpers/SeoHelper.php',
     'App\\Http\\Controllers\\Admin\\AdminUserController' => $baseDir . '/app/Http/Controllers/Admin/AdminUserController.php',
     'App\\Http\\Controllers\\Admin\\ArticleController' => $baseDir . '/app/Http/Controllers/Admin/ArticleController.php',
     'App\\Http\\Controllers\\Admin\\CityController' => $baseDir . '/app/Http/Controllers/Admin/CityController.php',

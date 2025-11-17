@@ -600,6 +600,7 @@ class ComposerStaticInitc514d8f7b9fc5970bdd94287905ef584
 
     public static $classMap = array (
         'App\\Console\\Commands\\PublishScheduledArticles' => __DIR__ . '/../..' . '/app/Console/Commands/PublishScheduledArticles.php',
+        'App\\Helpers\\SeoHelper' => __DIR__ . '/../..' . '/app/Helpers/SeoHelper.php',
         'App\\Http\\Controllers\\Admin\\AdminUserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/AdminUserController.php',
         'App\\Http\\Controllers\\Admin\\ArticleController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/ArticleController.php',
         'App\\Http\\Controllers\\Admin\\CityController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/CityController.php',

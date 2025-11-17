@@ -1,5 +1,7 @@
 @extends('layouts.visitor')
 
+@section('title', $service->name)
+
 @section('content')
 
     <!-- ✅ GLightbox CSS -->
